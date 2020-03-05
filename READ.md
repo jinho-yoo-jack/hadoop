@@ -165,9 +165,13 @@ $ bin/hdfs dfs -ls /user
 ound 1 items
 drwxr-xr-x   - root supergroup          0 2020-03-05 04:32 /user/hduser
 ```
+<br>
+<br>
+<br>
+<br>
 
 >### Part_2 : @Hive
-@1. HDFS에 필요한 파일 생성 및 권한 수정
+1. HDFS에 필요한 파일 생성 및 권한 수정
 ```sh
 # Change Dir Owner and Group
 $ sudo chown -R hduser:hadoop /usr/local/hive
@@ -186,7 +190,7 @@ Found 1 items
 drwxrwxr-x   - root supergroup          0 2020-03-05 05:18 /user/hive/warehouse
 ```
 
-@2. Edit Hive configure 
+2. Edit Hive configure 
 ```sh
 $ pwd
 /usr/local/hive/conf
@@ -218,7 +222,7 @@ $ vim hive-site.xml
 //:wq
 ```
 
-@3. 메타데이터를 보관할 저장소 설정(옵션: RDBMS or derby 데이터베이스)
+3. 메타데이터를 보관할 저장소 설정(옵션: RDBMS or derby 데이터베이스)
 - Repository URL
 mysql-connector :
 https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar
@@ -241,7 +245,7 @@ Initialization script completed
 schemaTool completed
 ```
 
-@4. Execute Hiveserver2
+4. Execute Hiveserver2
 ```sh
 # 1. Start hiveserver2
 $ bin/hiveserver2
