@@ -1,5 +1,8 @@
 1. HDFS와 MapReduce를 이용해서 wordCount하기.
 2. HDFS와 Hive 연동하기 + Stream 이용해보기
+- HIVE_HOME > bin/hiveserver2
+- HIVE_HOME > bin/beeline
+- beeline > !connect jdbc:hive2://localhost:10000/default
 
 # 이론
 ## 1. Hive
